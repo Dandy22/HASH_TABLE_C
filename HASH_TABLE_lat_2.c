@@ -41,6 +41,20 @@ void deleteChar(char nama[]){
 	}
 }
 
+void search(char nim[]){
+int index = nama[0] - 'A';
+if(head[index] == NULL){
+	return;
+	{else{
+		curr = head[index];
+		while(curr){
+			if(strcmp(curr->nama, nama)==0){
+				printf("Found At Index: %d\n", index);
+			}
+		}	curr = curr->next;
+	}
+}
+
 void display(){
 	for(int i = 0; i < 26; i++){
 		if(head[i]!=NULL){
